@@ -1,6 +1,10 @@
 interface I1
 {
 	void show();
+	default void showDisplay()
+	{
+		System.out.println("Showing and displaying....");
+	}
 }
 interface I2 extends I1
 {
@@ -30,6 +34,7 @@ public class AgainInterface {
 	{
 		Chess ch=new Chess();
 		ch.display();
+		ch.showDisplay();
 		ch.show();
 		ch.displayShow();
 	}
